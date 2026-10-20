@@ -11,8 +11,8 @@ p,li{color:var(--text)}.muted{color:var(--muted);font-size:14px}a{color:var(--in
 nav{display:flex;gap:16px;margin-bottom:28px;font-size:14px}table{border-collapse:collapse;width:100%;font-size:15px}
 td,th{border:1px solid var(--border);padding:8px 10px;text-align:left;vertical-align:top}th{background:var(--surface)}
 </style></head>
-<body><main><nav><a href="./">Taleberry</a><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a><a href="ru/">Русский</a></nav><h1>Privacy policy</h1>
-<p class="muted">Effective 13 October 2026 · Applies to the Taleberry app for iOS and Android</p>
+<body><main><nav><a href="./">Taleberry</a><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a><a href="delete-account.html">Delete account</a><a href="ru/">Русский</a></nav><h1>Privacy policy</h1>
+<p class="muted">Effective 20 October 2026 · Applies to the Taleberry app for iOS and Android</p>
 <p>Taleberry makes short bedtime tales in which your child is the hero. The app is used by parents. Children do not create accounts. This policy explains what we collect, why, who processes it, and the choices you have. Questions: <a href="mailto:dummycash17@gmail.com">dummycash17@gmail.com</a>.</p>
 
 <h2>1. What we collect</h2>
@@ -21,15 +21,14 @@ td,th{border:1px solid var(--border);padding:8px 10px;text-align:left;vertical-a
 <tr><td>Child profiles you create: first name, age, interests, and the look you choose for the hero (hair, skin tone, outfit and similar options). No photos.</td><td>To write tales about your child</td></tr>
 <tr><td>Tales: the story ideas you type, and the generated text, pictures and narration</td><td>To show and replay your tales</td></tr>
 <tr><td>Subscription status (from the App Store or Google Play through RevenueCat)</td><td>To give you the tales included in your plan</td></tr>
-<tr><td>A notification token for your device, if you allow notifications</td><td>To tell you when a tale is ready</td></tr>
-<tr><td>Crash reports and anonymous usage counts</td><td>To fix problems. These never include child data, story ideas or tale text.</td></tr></table>
-<p>We do not collect your location, contacts or photos, and we do not use advertising identifiers.</p>
+<tr><td>A notification token for your device, if you allow notifications</td><td>To tell you when a tale is ready</td></tr></table>
+<p>We do not collect your location, contacts or photos, we do not use advertising identifiers, and the app contains no analytics or crash-reporting tools.</p>
 
 <h2>2. AI services that make each tale</h2>
 <p>Before the first tale, the app asks for your consent and shows this list. When you create a tale, we send these companies only what they need:</p>
 <ul>
-<li><b>OpenAI</b> writes the story and paints the pictures. It receives your child's first name, age and interests, the story idea you typed, and a description of the hero's look. Picture requests contain the hero's look and the scene, not your child's name.</li>
-<li><b>Google Cloud Text-to-Speech</b> reads the story aloud. It receives the story text.</li>
+<li><b>OpenAI</b> writes the story and paints the pictures. It receives your child's age and interests, whether the hero is a girl or a boy (if you chose it), the story idea you typed, and a description of the hero's look. It does not receive your child's name: the story is written with a placeholder and the name is added on our servers afterwards.</li>
+<li><b>Google Cloud Text-to-Speech</b> reads the story aloud, when narration is available. It receives the story text, which includes your child's first name.</li>
 </ul>
 <p>We never send a surname, a photo, your email or your location to these services. They act as our service providers and may not use this data to train their models. Where a provider offers zero data retention, we use it. If we change providers, the app asks for your consent again.</p>
 
@@ -44,13 +43,13 @@ td,th{border:1px solid var(--border);padding:8px 10px;text-align:left;vertical-a
 <tr><td>Supabase</td><td>Database, storage, sign-in</td></tr>
 <tr><td>OpenAI</td><td>Story text and pictures</td></tr>
 <tr><td>Google Cloud</td><td>Narration (text-to-speech)</td></tr>
-<tr><td>Google Firebase</td><td>Crash reports, anonymous usage counts, notifications</td></tr>
+<tr><td>Google Firebase</td><td>Notifications ("your tale is ready")</td></tr>
 <tr><td>RevenueCat, Apple, Google</td><td>Subscriptions and payments</td></tr>
 <tr><td>Apple, Google</td><td>Sign-in</td></tr></table>
 <p>We do not sell personal data and we do not show ads.</p>
 
 <h2>6. How long we keep data</h2>
-<p>We keep your data while your account exists. You can delete a tale, a child or your whole account in the app (Profile, Delete account). Account deletion removes your account, children, tales, pictures and narration from our systems; copies in backups are removed within 30 days. Deleting the account does not cancel a store subscription; cancel it in your App Store or Google Play settings.</p>
+<p>We keep your data while your account exists. You can delete a tale, a child or your whole account in the app (Profile, Delete account), or without the app as described on <a href="delete-account.html">Delete your account</a>. Account deletion removes your account, children, tales, pictures and narration from our systems; copies in backups are removed within 30 days. Deleting the account does not cancel a store subscription; cancel it in your App Store or Google Play settings.</p>
 
 <h2>7. Your rights</h2>
 <p>You can ask us for a copy of your data, to correct it, or to delete it, by writing to <a href="mailto:dummycash17@gmail.com">dummycash17@gmail.com</a>. Depending on where you live (for example under the GDPR or COPPA), you may have further rights, including withdrawing consent; withdrawing consent stops new tales from being made.</p>
