@@ -27,8 +27,8 @@ td,th{border:1px solid var(--border);padding:8px 10px;text-align:left;vertical-a
 <h2>2. AI services that make each tale</h2>
 <p>Before the first tale, the app asks for your consent and shows this list. When you create a tale, we send these companies only what they need:</p>
 <ul>
-<li><b>OpenAI</b> writes the story and paints the pictures. It receives your child's age and interests, whether the hero is a girl or a boy (if you chose it), the story idea you typed, and a description of the hero's look. It does not receive your child's name: the story is written with a placeholder and the name is added on our servers afterwards.</li>
-<li><b>Google Cloud Text-to-Speech</b> reads the story aloud, when narration is available. It receives the story text, which includes your child's first name.</li>
+<li><b>OpenAI</b> writes the story and paints the pictures. It receives your child's age and interests, whether the hero is a girl or a boy (if you chose it), the story idea you typed, and a description of the hero's look. The story and pictures are requested without your child's name: the story is written with a placeholder and the name is added on our servers afterwards.</li>
+<li><b>OpenAI</b> also reads the story aloud. For this it receives the finished tale text, which includes your child's first name. The story and pictures themselves are made without the name.</li>
 </ul>
 <p>We never send a surname, a photo, your email or your location to these services. They act as our service providers and may not use this data to train their models. Where a provider offers zero data retention, we use it. If we change providers, the app asks for your consent again.</p>
 
@@ -41,8 +41,7 @@ td,th{border:1px solid var(--border);padding:8px 10px;text-align:left;vertical-a
 <h2>5. Who else processes data</h2>
 <table><tr><th>Provider</th><th>Purpose</th></tr>
 <tr><td>Supabase</td><td>Database, storage, sign-in</td></tr>
-<tr><td>OpenAI</td><td>Story text and pictures</td></tr>
-<tr><td>Google Cloud</td><td>Narration (text-to-speech)</td></tr>
+<tr><td>OpenAI</td><td>Writes, illustrates and narrates tales</td></tr>
 <tr><td>Google Firebase</td><td>Notifications ("your tale is ready")</td></tr>
 <tr><td>Resend</td><td>Delivers an email to our team when you report a tale (the reason, your note and the tale's reference; never your child's name)</td></tr>
 <tr><td>RevenueCat, Apple, Google</td><td>Subscriptions and payments</td></tr>
