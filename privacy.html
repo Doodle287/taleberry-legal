@@ -21,7 +21,7 @@ td,th{border:1px solid var(--border);padding:8px 10px;text-align:left;vertical-a
 <tr><td>Child profiles you create: first name, age, interests, and the look you choose for the hero (hair, skin tone, outfit and similar options). No photos.</td><td>To write tales about your child</td></tr>
 <tr><td>Tales: the story ideas you type, and the generated text, pictures and narration</td><td>To show and replay your tales</td></tr>
 <tr><td>Subscription status (from the App Store or Google Play through RevenueCat)</td><td>To give you the tales included in your plan</td></tr>
-<tr><td>A notification token for your device, if you allow notifications</td><td>To tell you when a tale is ready</td></tr></table>
+<tr><td>Your voice recording and the AI copy of your voice, only if you set up <b>My voice</b> (Premium)</td><td>To read new tales to your child in your voice</td></tr><tr><td>A notification token for your device, if you allow notifications</td><td>To tell you when a tale is ready</td></tr></table>
 <p>We do not collect your location, contacts or photos, we do not use advertising identifiers, and the app contains no analytics or crash-reporting tools.</p>
 
 <h2>2. AI services that make each tale</h2>
@@ -30,6 +30,7 @@ td,th{border:1px solid var(--border);padding:8px 10px;text-align:left;vertical-a
 <li><b>OpenAI</b> writes the story and paints the pictures. It receives your child's age and interests, whether the hero is a girl or a boy (if you chose it), the story idea you typed, and a description of the hero's look. It does not receive your child's name: the story is written with a placeholder and the name is added on our servers afterwards.</li>
 <li>Tales are read aloud by <b>your phone's own voice</b> by default; then the text stays on your phone.</li>
 <li><b>Cartesia</b> (narration, when narration is on): Cartesia, Inc. turns a tale's text into audio so the app can read it aloud. It receives the tale text, which includes your child's first name, and the tale's language. Nothing else: no age, interests, pictures, email or device identifiers. Cartesia processes this under its own terms. You agree to this on the AI consent screen before any tale is narrated.</li>
+<li><b>My voice</b> (optional, Premium plan, adults 18+ recording their own voice only): if you set it up, a 10–60 second recording of you reading a short text is sent to <b>Cartesia</b>, which makes an AI copy of your voice. Taleberry keeps only a reference to that voice copy, not the recording. For each new tale made while your voice is selected, Cartesia receives the tale text (with your child's first name) to read it in your voice. A voice recording and voice model can identify you and may count as biometric data in some places; we use them only to read tales in your voice, never to identify you, and never sell or share them for advertising. You can delete the voice copy at any time in Profile → Reading voice, and choose to also delete the audio of tales already read in your voice; deleting your account deletes all of it. On another plan the copy is kept but not used, and you can still delete it.</li>
 <li>If you choose <b>Record my voice</b>, the app uses the microphone only while you record. Voice recordings you make stay on your device; Taleberry never uploads them, and they are not included in device backups. Deleting a tale, a child or your account deletes its recordings.</li>
 </ul>
 <p>We never send a surname, a photo, your email or your location to these services. They act as our service providers and may not use this data to train their models. Where a provider offers zero data retention, we use it. If we change providers, the app asks for your consent again.</p>
@@ -44,7 +45,7 @@ td,th{border:1px solid var(--border);padding:8px 10px;text-align:left;vertical-a
 <table><tr><th>Provider</th><th>Purpose</th></tr>
 <tr><td>Supabase</td><td>Database, storage, sign-in</td></tr>
 <tr><td>OpenAI</td><td>Writes and illustrates tales</td></tr>
-<tr><td>Cartesia</td><td>Reads tales aloud (narration), when narration is on</td></tr>
+<tr><td>Cartesia</td><td>Reads tales aloud (narration), when narration is on; makes the AI copy of your voice if you set up My voice</td></tr>
 <tr><td>Google Firebase</td><td>Notifications ("your tale is ready")</td></tr>
 <tr><td>Telegram</td><td>Delivers a message to our team when you report a tale (the reason, your note and the tale's reference; never your child's name)</td></tr>
 <tr><td>Resend</td><td>Delivers an email to our team when you report a tale (the reason, your note and the tale's reference; never your child's name)</td></tr>
